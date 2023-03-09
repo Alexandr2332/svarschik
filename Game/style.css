@@ -1,0 +1,62 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    background-size: 1000px 250px;
+    background-image: url(img/qqq.png);
+    background-size: 300px 250px;
+    margin: auto;
+}
+
+#sss {
+    width: 65px;
+    height: 50px;
+    background-image: url(img/sss.png);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 150px;
+}
+
+#trac {
+    width: 30px;
+    height: 50px;
+    background-image: url(img/trac.png);
+    background-size: 30px 50px;
+    position: relative;
+    top: 100px;
+    left: 580px;
+    animation: tracMov 3s infinite linear;
+    background-repeat: no-repeat;
+}
+
+@keyframes tracMov {
+    0%{
+        left: 500px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
+}
